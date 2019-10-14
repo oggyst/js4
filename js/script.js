@@ -1,17 +1,21 @@
-function run(max, min) {
+function run(max, min) 
+{
     const intNumberOfRows = document.getElementById('numberOfColumns').value;
     const intNumberOfColumns = document.getElementById('numberOfRows').value;
-    if (intNumberOfRows == "" || intNumberOfColumns == "") {
+    if (intNumberOfRows == "" || intNumberOfColumns == "") 
+    {
         alert('Please fill required fields.');
     } else if (intNumberOfRows < 1 || intNumberOfColumns < 1)
         alert('All numbers must be 1 or greater');
-    else {
+    else 
+    {
         let arrRowNumbers = [];
         let arrColumnNumbers = [];
         let arrMatrix = [[]];
         let intArrayAverage = 0;
         document.write('<style>td{border:1px solid black;}</style><table><tr><td></td>');
-        for (var i = 0; i < intNumberOfColumns; i++) {
+        for (var i = 0; i < intNumberOfColumns; i++) 
+        {
             arrRowNumbers[i] = (Math.floor(Math.random() * (max - min)) + min);
             intArrayAverage = intArrayAverage + arrRowNumbers[i];
         }
