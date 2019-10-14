@@ -43,6 +43,7 @@ function run(max, min)
             document.write('<td> In this column average is ' + Math.floor(intArrayAverage));
             document.write('</tr>');
         }
+        document.write ('</table>');
         for (var i = 0; i < intNumberOfRows; i++) 
         {
             intArrayRowAverage = 0;
@@ -54,6 +55,5 @@ function run(max, min)
             intArrayRowAverage = intArrayRowAverage / intNumberOfColumns;
             document.write(i + 1 + '. row average is ' + Math.floor(intArrayRowAverage) + '<br>');
         }
-        document.write ('</table>');
     }
 }
