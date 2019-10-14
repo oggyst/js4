@@ -54,5 +54,6 @@ function run(max, min)
             intArrayRowAverage = intArrayRowAverage / intNumberOfColumns;
             document.write(i + 1 + '. row average is ' + Math.floor(intArrayRowAverage) + '<br>');
         }
+        document.write ('</table>');
     }
 }
