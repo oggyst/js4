@@ -30,7 +30,6 @@ function run(max, min)
         for (var i = 0; i < intNumberOfColumns; i++) 
         {
             intArrayAverage = 0;
-            intCounter = 0;
             document.write('<tr>')
             arrMatrix[i] = [];
             document.write('<td>' + arrRowNumbers[i] + '</td>');
@@ -39,10 +38,6 @@ function run(max, min)
                 arrMatrix[i][j] = arrRowNumbers[i] * arrColumnNumbers[j];
                 intArrayAverage = intArrayAverage + arrMatrix[i][j];
                 document.write('<td>' + arrMatrix[i][j] + '</td>');
-                if (arrMatrix[i][j] % 2 == 0) 
-                {
-                    intCounter++;
-                }
             }
             intArrayAverage = intArrayAverage / intNumberOfRows;
             document.write('<td> In this column average is ' + Math.floor(intArrayAverage));
